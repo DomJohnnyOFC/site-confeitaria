@@ -1,0 +1,304 @@
+/* ============================= /
+/ PÁGINA SOBRE /
+/ ============================= */
+
+.pagina-sobre {
+width: 90%;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+/* ============================= /
+/ INTRODUÇÃO /
+/ ============================= */
+
+.sobre-introducao {
+margin-top: 30px;
+}
+
+.sobre-introducao h2,
+.nossa-proposta h2,
+.nossos-bolos h2 {
+color: #ffb6ce;
+font-size: 35px;
+text-align: center;
+margin-bottom: 30px;
+}
+
+/* ÁREA COM TEXTO E IMAGEM */
+
+.sobre-conteudo {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 50px;
+
+background-color: #fff7fa;
+
+border: 2px solid #ffb6ce;
+border-radius: 20px;
+
+padding: 35px;
+
+box-sizing: border-box;
+
+
+}
+
+/* TEXTO */
+
+.sobre-texto {
+width: 55%;
+}
+
+.sobre-texto h3 {
+color: #02cfe0;
+font-size: 30px;
+margin-bottom: 20px;
+}
+
+.sobre-texto p {
+font-size: 18px;
+line-height: 1.6;
+margin-top: 15px;
+text-align: justify;
+}
+
+/* IMAGEM */
+
+.sobre-imagem {
+width: 45%;
+height: 350px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+
+.sobre-imagem img {
+width: 100%;
+height: 100%;
+
+object-fit: cover;
+
+border-radius: 15px;
+
+border: 3px solid #ffb6ce;
+
+
+}
+
+/* ============================= /
+/ NOSSA PROPOSTA /
+/ ============================= */
+
+.nossa-proposta {
+margin-top: 50px;
+}
+
+.proposta-cards {
+display: grid;
+
+grid-template-columns: repeat(3, 1fr);
+
+gap: 25px;
+
+
+}
+
+/* CARD */
+
+.proposta-card {
+background-color: #fff7fa;
+
+border: 2px solid #ffb6ce;
+border-radius: 15px;
+
+padding: 25px;
+
+text-align: center;
+
+box-sizing: border-box;
+
+transition: transform 0.3s ease,
+            box-shadow 0.3s ease;
+
+
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.proposta-card:hover {
+transform: translateY(-5px);
+
+box-shadow: 0 5px 15px rgba(255, 182, 206, 0.5);
+
+
+}
+
+/* ÍCONE */
+
+.proposta-card span {
+display: block;
+
+color: #02cfe0;
+
+font-size: 40px;
+
+margin-bottom: 10px;
+
+
+}
+
+/* TÍTULO */
+
+.proposta-card h3 {
+color: #02cfe0;
+
+font-size: 25px;
+
+margin-bottom: 15px;
+
+
+}
+
+/* TEXTO */
+
+.proposta-card p {
+font-size: 17px;
+
+line-height: 1.5;
+
+margin-top: 0;
+
+text-align: center;
+
+
+}
+
+/* ============================= /
+/ NOSSOS BOLOS /
+/ ============================= */
+
+.nossos-bolos {
+margin-top: 50px;
+
+margin-bottom: 50px;
+
+text-align: center;
+
+
+}
+
+.nossos-bolos > p {
+max-width: 900px;
+
+margin: 15px auto;
+
+font-size: 19px;
+
+line-height: 1.6;
+
+
+}
+
+/* FRASE FINAL */
+
+.frase-final {
+margin-top: 35px;
+
+padding: 25px;
+
+background-color: #fceaea;
+
+border-radius: 15px;
+
+border: 2px solid #ffb6ce;
+
+
+}
+
+.frase-final h3 {
+color: #02cfe0;
+
+font-size: 25px;
+
+
+}
+
+/* ============================= /
+/ RESPONSIVIDADE /
+/ ============================= */
+
+@media (max-width: 900px) {
+
+.sobre-conteudo {
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+.sobre-texto,
+.sobre-imagem {
+    width: 100%;
+}
+
+.proposta-cards {
+    grid-template-columns: 1fr;
+}
+
+
+}
+
+@media (max-width: 600px) {
+
+.pagina-sobre {
+    width: 92%;
+}
+
+
+.sobre-introducao h2,
+.nossa-proposta h2,
+.nossos-bolos h2 {
+    font-size: 28px;
+}
+
+
+.sobre-conteudo {
+    padding: 20px;
+}
+
+
+.sobre-texto h3 {
+    font-size: 25px;
+}
+
+
+.sobre-texto p {
+    font-size: 16px;
+}
+
+
+.sobre-imagem {
+    height: 250px;
+}
+
+
+.proposta-card h3 {
+    font-size: 22px;
+}
+
+
+.proposta-card p {
+    font-size: 16px;
+}
+
+
+.nossos-bolos > p {
+    font-size: 17px;
+}
+
+
+}

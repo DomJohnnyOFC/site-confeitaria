@@ -1,0 +1,169 @@
+/* ÁREA DOS CARDS */
+.meu-cardapio-itens {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 30px;
+
+    width: 90% !important;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+/* CADA CARD */
+.menu-cardapio-item {
+    width: 100% !important;
+    min-width: 0;
+
+    border: 2px solid rgb(255, 89, 158);
+    border-radius: 15px;
+
+    padding: 20px;
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+
+/* TÍTULO DO CARD */
+.menu-cardapio-item h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+
+/* TEXTOS */
+.menu-cardapio-item p {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+
+/* ÁREA DA IMAGEM */
+.div-card {
+    width: 100% !important;
+    height: 280px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 15px 0;
+}
+
+
+/* IMAGEM */
+.img-cardapio {
+    display: block;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: contain;
+    object-position: center;
+
+    border-radius: 10px;
+}
+
+
+/* BOTÃO RESERVAR */
+.reservar {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.reservar button {
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    color: rgb(255, 89, 158);
+    cursor: pointer;
+}
+
+.reservar button:hover {
+    text-decoration: underline;
+}
+
+
+/* FUNDO ESCURO */
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    z-index: 10;
+}
+
+
+/* JANELA DO MODAL */
+#modal {
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    width: 350px;
+    max-width: 90%;
+
+    padding: 25px;
+
+    text-align: center;
+
+    z-index: 20;
+
+    box-sizing: border-box;
+}
+
+
+/* IMAGEM DO PIX */
+.pix {
+    width: 220px;
+    height: 220px;
+
+    object-fit: contain;
+
+    margin: 15px auto;
+
+    display: block;
+}
+
+
+/* BOTÃO FECHAR */
+.fechar {
+    background-color: rgb(255, 89, 158);
+
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 10px 25px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.fechar:hover {
+    background-color: rgb(230, 60, 130);
+}
+
+
+/* ESCONDER */
+.hide {
+    display: none !important;
+}
