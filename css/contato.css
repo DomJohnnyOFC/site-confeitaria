@@ -1,0 +1,34 @@
+.pagina-contato { width: min(94%, 1180px); margin: 30px auto 55px; }
+.contato-intro { text-align: center; max-width: 780px; margin: 0 auto 28px; }
+.contato-intro .etiqueta { color: #df7299; font-size: .9rem; letter-spacing: 2px; font-weight: bold; margin: 0; }
+.contato-intro h2 { margin: 6px 0 12px; }
+.contato-intro > p:last-child { max-width: 720px; margin: 0 auto; }
+.contato-layout { display: grid; grid-template-columns: minmax(240px, .8fr) minmax(0, 1.5fr); gap: 24px; align-items: start; }
+.contato-info, .formulario-card { border: 2px solid #ffb6ce; border-radius: 18px; padding: clamp(20px, 3vw, 32px); }
+.contato-info { background: #fff7fa; }
+.contato-info h3, .formulario-card > h3, .resultado-encomenda h3 { color: #df7299; margin: 0 0 12px; }
+.contato-info > p { margin-bottom: 20px; }
+.info-item { display: flex; align-items: flex-start; gap: 12px; margin: 22px 0; }
+.info-icone { flex: 0 0 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; background: #ffb6ce; color: #573344; font-size: 1.35rem; }
+.info-item strong { display: block; color: #493640; }
+.info-item p { font-size: .98rem; margin: 3px 0 0; }
+.aviso-info { border-top: 1px solid #f1c7d6; padding-top: 16px; color: #6b5961; font-size: .92rem; }
+.formulario-card { background: #fff; box-shadow: 0 8px 24px rgba(120, 60, 85, .08); }
+.texto-obrigatorio { font-size: .9rem; color: #6b5961; margin: -8px 0 18px; }
+.campos-duplos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.campo { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; min-width: 0; }
+.campo label { font-weight: bold; font-size: .98rem; }
+.campo input, .campo select, .campo textarea, #mensagem-pronta { width: 100%; min-width: 0; border: 1px solid #e5c5d1; border-radius: 9px; padding: 11px 12px; background: #fffdfd; color: #493640; font: inherit; font-size: 1rem; }
+.campo input:focus, .campo select:focus, .campo textarea:focus, #mensagem-pronta:focus { outline: 2px solid #ffb6ce; outline-offset: 1px; }
+.campo small { font-size: .85rem; color: #78666e; }
+.botao-encomenda, .botao-secundario { border: 0; border-radius: 10px; padding: 13px 18px; font: inherit; font-weight: bold; cursor: pointer; transition: transform .15s ease, background .15s ease; }
+.botao-encomenda { width: 100%; background: #ffb6ce; color: #573344; }
+.botao-encomenda:hover, .botao-secundario:hover { background: #02cfe0; color: #fff; transform: translateY(-1px); }
+.resultado-encomenda { margin-top: 24px; padding-top: 22px; border-top: 2px dashed #ffb6ce; }
+.resultado-encomenda p { font-size: .98rem; }
+#mensagem-pronta { margin: 12px 0; resize: vertical; }
+.botao-secundario { background: #fff0f5; color: #573344; border: 1px solid #ffb6ce; }
+.status-copia { font-weight: bold; color: #397b57; }
+[hidden] { display: none !important; }
+@media (max-width: 760px) { .contato-layout { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .campos-duplos { grid-template-columns: 1fr; gap: 0; } .contato-info, .formulario-card { padding: 20px 16px; } }

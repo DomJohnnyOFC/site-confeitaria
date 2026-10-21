@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato e Encomendas - Confeitaria Sempre Doces</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caacupe+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/contato.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="div-logo" href="../index.html" aria-label="Página inicial">
+      <img class="logotipo" src="../img/img.png" alt="Logo da Confeitaria Sempre Doces">
+    </a>
+    <div class="div-menu">
+      <h1>Confeitaria Sempre Doces</h1>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="contato.html" aria-current="page">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pagina-contato">
+    <section class="contato-intro">
+      <p class="etiqueta">FEITO COM AMOR ♡</p>
+      <h2>FAÇA SUA ENCOMENDA</h2>
+      <p>Conte pra gente como você imagina seu bolo! Preencha os dados abaixo para organizar sua solicitação de encomenda e entrega.</p>
+    </section>
+
+    <div class="contato-layout">
+      <aside class="contato-info">
+        <h3>Vamos adoçar seu dia?</h3>
+        <p>Para ajudar a planejar seu pedido, informe a data desejada com antecedência e descreva os detalhes da decoração.</p>
+        <div class="info-item"><span class="info-icone">♡</span><div><strong>Encomendas personalizadas</strong><p>Conte o tema, sabor e detalhes especiais.</p></div></div>
+        <div class="info-item"><span class="info-icone">✿</span><div><strong>Entrega ou retirada</strong><p>Escolha a opção que funciona melhor para você.</p></div></div>
+        <div class="info-item"><span class="info-icone">✉</span><div><strong>Confirmação do pedido</strong><p>A data e o valor precisam ser confirmados pela confeitaria.</p></div></div>
+        <p class="aviso-info">O envio automático ainda não está conectado a um sistema de atendimento. Ao preencher o formulário, você poderá copiar a mensagem e enviá-la pelo canal de contato da confeitaria.</p>
+      </aside>
+
+      <section class="formulario-card" aria-labelledby="titulo-formulario">
+        <h3 id="titulo-formulario">Detalhes da encomenda</h3>
+        <p class="texto-obrigatorio">Campos com * são obrigatórios.</p>
+        <form id="form-encomenda">
+          <div class="campos-duplos">
+            <div class="campo"><label for="nome">Seu nome *</label><input id="nome" name="nome" type="text" autocomplete="name" required maxlength="90" placeholder="Nome completo"></div>
+            <div class="campo"><label for="telefone">WhatsApp/telefone *</label><input id="telefone" name="telefone" type="tel" autocomplete="tel" required maxlength="25" placeholder="(00) 00000-0000"></div>
+          </div>
+          <div class="campo"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" maxlength="120" placeholder="voce@exemplo.com"></div>
+          <div class="campos-duplos">
+            <div class="campo"><label for="bolo">Tipo de bolo *</label><select id="bolo" name="bolo" required><option value="">Selecione uma opção</option><option>Bolo de Tubarão</option><option>Bolo de Chocolate</option><option>Bolo de Gatinho</option><option>Bolo Man Face Roblox</option><option>Bolo Pol Emo</option><option>Bolo de Oreo</option><option>Bolo personalizado</option><option>Outro / quero consultar</option></select></div>
+            <div class="campo"><label for="tamanho">Tamanho aproximado *</label><select id="tamanho" name="tamanho" required><option value="">Selecione</option><option>Pequeno</option><option>Médio</option><option>Grande</option><option>Quero orientação</option></select></div>
+          </div>
+          <div class="campos-duplos">
+            <div class="campo"><label for="quantidade">Quantidade *</label><input id="quantidade" name="quantidade" type="number" min="1" max="30" value="1" required></div>
+            <div class="campo"><label for="data">Data desejada *</label><input id="data" name="data" type="date" required></div>
+          </div>
+          <div class="campos-duplos">
+            <div class="campo"><label for="horario">Horário preferido</label><select id="horario" name="horario"><option value="A combinar">A combinar</option><option>Manhã (8h–12h)</option><option>Tarde (12h–18h)</option><option>Noite (após 18h)</option></select></div>
+            <div class="campo"><label for="recebimento">Como deseja receber? *</label><select id="recebimento" name="recebimento" required><option value="">Selecione</option><option>Entrega</option><option>Retirada no local</option></select></div>
+          </div>
+          <div class="campo" id="campo-endereco"><label for="endereco">Endereço para entrega</label><input id="endereco" name="endereco" type="text" autocomplete="street-address" maxlength="180" placeholder="Rua, número, bairro e cidade"><small>Preencha se escolher entrega.</small></div>
+          <div class="campo"><label for="detalhes">Detalhes e observações</label><textarea id="detalhes" name="detalhes" rows="4" maxlength="700" placeholder="Sabor, recheio, tema, cores, mensagem no bolo... "></textarea></div>
+          <button class="botao-encomenda" type="submit">Preparar mensagem da encomenda ♡</button>
+        </form>
+        <section id="resultado-encomenda" class="resultado-encomenda" hidden aria-live="polite">
+          <h3>Sua mensagem está pronta!</h3>
+          <p>Confira os dados abaixo, copie a mensagem e envie pelo canal de atendimento da confeitaria. Sua data só estará confirmada depois do retorno da equipe.</p>
+          <textarea id="mensagem-pronta" rows="10" readonly aria-label="Mensagem pronta para enviar"></textarea>
+          <button id="copiar-mensagem" class="botao-secundario" type="button">Copiar mensagem</button>
+          <p id="status-copia" class="status-copia" role="status"></p>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <footer><p>© 2026 Confeitaria Sempre Doces. Todos os direitos reservados.</p></footer>
+  <script src="../js/contato.js"></script>
+</body>
+</html>
