@@ -1,0 +1,369 @@
+
+/* =====================================
+   PROFISSIONAIS - SEMPRE DOCES
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+.apresentacao-equipe {
+    padding: 70px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #f8e4d8, #fff5ec, #f3ded2);
+}
+
+.etiqueta {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #d9a58c;
+    border-radius: 30px;
+    color: #9c573d;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.apresentacao-equipe h2 {
+    margin: 22px 0 15px;
+    color: #783f32;
+    font-family: "Caacupe One", sans-serif;
+    font-size: clamp(30px, 5vw, 48px);
+}
+
+.apresentacao-equipe p {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #71584e;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* EQUIPE */
+
+.equipe {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 65px 25px 80px;
+}
+
+.titulo-secao {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.titulo-secao h2 {
+    margin-bottom: 10px;
+    color: #783f32;
+    font-family: "Caacupe One", sans-serif;
+    font-size: clamp(27px, 4vw, 36px);
+}
+
+.titulo-secao p {
+    color: #80675b;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* GRADE DOS PROFISSIONAIS */
+
+.grade-profissionais {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    align-items: stretch;
+}
+
+/* CARTÕES */
+
+.card-profissional {
+    min-width: 0;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #f0e1d8;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(91, 53, 39, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-profissional:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(91, 53, 39, 0.15);
+}
+
+/* FOTOS */
+
+.foto-container {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    background-color: #f2dfd3;
+}
+
+.foto-profissional {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+.card-profissional:hover .foto-profissional {
+    transform: scale(1.05);
+}
+
+/* NÚMERO DO PROFISSIONAL */
+
+.numero-profissional {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    display: flex;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fffaf6;
+    color: #914f3a;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* INFORMAÇÕES */
+
+.informacoes-profissional {
+    padding: 25px;
+}
+
+.especialidade {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 7px 12px;
+    border-radius: 6px;
+    background-color: #f8e8df;
+    color: #9c573d;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.informacoes-profissional h3 {
+    margin: 0 0 8px;
+    color: #713d30;
+    font-family: "Caacupe One", sans-serif;
+    font-size: 27px;
+    overflow-wrap: anywhere;
+}
+
+.cargo {
+    margin: 0 0 16px;
+    color: #bd7856;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.descricao {
+    margin: 0;
+    color: #6d5a52;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* CONTATOS */
+
+.contatos-profissional {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid #f0e1d8;
+}
+
+.contato-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: #71584e;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.icone-contato {
+    display: flex;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f8e8df;
+    font-size: 17px;
+}
+
+.texto-contato {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.contato-item strong {
+    display: block;
+    margin-bottom: 3px;
+    color: #783f32;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.contato-item a {
+    color: #9c573d;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition: color 0.2s ease;
+}
+
+.contato-item a:hover {
+    color: #bd7856;
+    text-decoration: underline;
+}
+
+.contato-item a:focus-visible,
+.botao-cardapio:focus-visible {
+    outline: 3px solid #bd7856;
+    outline-offset: 4px;
+}
+
+/* AVISO SOBRE OS CONTATOS DEMONSTRATIVOS */
+
+.aviso-contatos {
+    max-width: 760px;
+    margin: 30px auto 0;
+    padding: 15px 18px;
+    border: 1px solid #ead3c5;
+    border-radius: 12px;
+    background-color: #fff8f3;
+    color: #71584e;
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* MENSAGEM FINAL */
+
+.mensagem-equipe {
+    padding: 60px 20px;
+    background-color: #713d30;
+    color: #fff;
+    text-align: center;
+}
+
+.mensagem-equipe h2 {
+    margin: 0 0 15px;
+    font-family: "Caacupe One", sans-serif;
+    font-size: clamp(26px, 4vw, 36px);
+}
+
+.mensagem-equipe p {
+    max-width: 650px;
+    margin: 0 auto 28px;
+    color: #f4dfd3;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* BOTÃO DO CARDÁPIO */
+
+.botao-cardapio {
+    display: inline-block;
+    padding: 14px 25px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    background-color: #fffaf6;
+    color: #713d30;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botao-cardapio:hover {
+    transform: translateY(-3px);
+    background-color: #eac4af;
+}
+
+/* MENU ATUAL */
+
+.div-menu ul li a[aria-current="page"] {
+    color: #d47b52;
+    font-weight: bold;
+}
+
+/* TABLETS */
+
+@media (max-width: 800px) {
+    .grade-profissionais {
+        gap: 22px;
+    }
+
+    .foto-container {
+        height: 260px;
+    }
+
+    .informacoes-profissional {
+        padding: 20px;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+    .apresentacao-equipe {
+        padding: 50px 20px;
+    }
+
+    .equipe {
+        padding: 45px 18px 55px;
+    }
+
+    .grade-profissionais {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+        gap: 25px;
+    }
+
+    .foto-container {
+        height: 280px;
+    }
+
+    .informacoes-profissional {
+        padding: 22px;
+    }
+
+    .mensagem-equipe {
+        padding: 45px 20px;
+    }
+}
+
+/* ACESSIBILIDADE: REDUZIR ANIMAÇÕES */
+
+@media (prefers-reduced-motion: reduce) {
+    .card-profissional,
+    .foto-profissional,
+    .botao-cardapio {
+        transition: none;
+    }
+
+    .card-profissional:hover,
+    .botao-cardapio:hover {
+        transform: none;
+    }
+
+    .card-profissional:hover .foto-profissional {
+        transform: none;
+    }
+}

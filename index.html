@@ -1,82 +1,200 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+
+    <meta
+        name="description"
+        content="Conheça a Confeitaria Sempre Doces, nossos bolos criativos e nossas delícias especiais.">
+
+    <title>Início | Confeitaria Sempre Doces</title>
+
     <link rel="stylesheet" href="css/index.css">
-</head>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Caacupe+One&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Caacupe+One&display=swap"
+        rel="stylesheet">
+</head>
+
 <body>
-   <header>
-    <div class="div-logo">
-        <img class="logotipo" src="img/img.png" alt="Logo da empresa">
-    </div>
 
-    <div class="div-menu">
-        <h1>Confeitaria Sempre Doces</h1>
+    <!-- CABEÇALHO -->
+    <header>
 
-        <ul>
-            <li>
-                <a href="index.html">Início</a>
-            </li>
-            <li>
-                <a href="pages/sobre.html">Sobre</a>
-            </li>
-            <li>
-                <a href="pages/cardapio.html">Cardápio</a>
-            </li>
-            <li>
-                <a href="pages/contato.html">Contato</a>
-            </li>
-        </ul>
-    </div>
-</header>
+        <div class="div-logo">
+            <a href="index.html" aria-label="Página inicial">
+                <img
+                    class="logotipo"
+                    src="img/img.png"
+                    alt="Logo da Confeitaria Sempre Doces">
+            </a>
+        </div>
 
-      <img id="img" class="img-bolo" src="img/shark_cake.jpg"
+        <div class="div-menu">
 
-      <section class="sobre">
-        <h2>Sobre Nós</h2>
+            <h1>Confeitaria Sempre Doces</h1>
+
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li>
+                        <a href="index.html" aria-current="page">Início</a>
+                    </li>
+                    <li>
+                        <a href="pages/sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="pages/cardapio.html">Cardápio</a>
+                    </li>
+                    <li>
+                        <a href="pages/contato.html">Contato</a>
+                    </li>
+                    <li>
+                        <a href="pages/profissionais.html">Profissionais</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- IMAGEM PRINCIPAL -->
+        <img
+            id="img"
+            class="img-bolo"
+            src="img/shark_cake.jpg"
+            alt="Bolo decorado em formato de tubarão">
+
+        <!-- SOBRE A CONFEITARIA -->
+        <section class="sobre">
+
+            <h2>Sobre Nós</h2>
+
             <p>
-                Somos uma confeitaria especializada em criar
-                bolos fofinhos e deliciosos para todas as ocasiões.
-                Nossa paixao pela confeitaria é relfetida em cada criação
-                que sai da nossa cozinha, temos bolos Kawaiis e fofinhos com varias tematicas
-                para agradar a todos os gostos, nem sempre o gosto impora, mas sim a beleza e fofura!
+                Somos uma confeitaria especializada em criar bolos
+                fofinhos e deliciosos para todas as ocasiões.
+                Nossa paixão pela confeitaria é refletida em cada
+                criação que sai da nossa cozinha.
+
+                Temos bolos kawaii, fofinhos e com várias temáticas
+                para agradar a todos os gostos. Para nós, não é apenas
+                o sabor que importa, mas também a beleza e a fofura!
             </p>
-      </section>
 
+            <p>
+                Quer conhecer melhor nossa história?
+                <a href="pages/sobre.html">
+                    Saiba mais sobre nós.
+                </a>
+            </p>
 
-      <section class="sobre">
-        <h2>~NOSSO CARDAPIO~</h2>
+        </section>
 
-        <div class="meu-cardapio-itens">
+        <!-- RESUMO DO CARDÁPIO -->
+        <section class="sobre">
 
-        </div>
+            <h2>~ NOSSO CARDÁPIO ~</h2>
 
+            <div class="meu-cardapio-itens">
 
-        <div class="menu-cardapio-item">
-             <h3>Bolo de Tubarão</h3>
-             <p>Um bolo com forma de tubarão, perfeito para festas de aniversário ou amantes do mar!</p>
-        </div>
+                <article class="menu-cardapio-item">
 
-        <div class="menu-cardapio-item">
-            <h3>Bolo de Chocolate</h3>
-            <p>Um bolo delicioso com sabor de chocolate, padrão mas bom para toda ocasião!</p>
-        </div>
+                    <h3>Bolo de Tubarão</h3>
 
-        <div class="menu-cardapio-item">
-            <h3>Bolo de Gatinho</h3>
-            <p>Um bolo fofinho com sabor de morango com chantilly, perfeito para quem gosta de pets e frutas!</p>
-        </div>
-      </section>
+                    <p>
+                        Um bolo em formato de tubarão, perfeito
+                        para aniversários e amantes do mar!
+                    </p>
 
-      <footer>
-        <p>©2026 Confeitaria Sempre Doces. Todos os direitos reservados.</p>
-      </footer>
+                    <img
+                        class="img-cardapio"
+                        src="img/shark_cake.jpg"
+                        alt="Bolo de tubarão"
+                        loading="lazy">
+
+                </article>
+
+                <article class="menu-cardapio-item">
+
+                    <h3>Bolo de Chocolate</h3>
+
+                    <p>
+                        Um bolo delicioso de chocolate,
+                        perfeito para qualquer ocasião!
+                    </p>
+
+                    <img
+                        class="img-cardapio"
+                        src="img/chocolate_cake.jpg"
+                        alt="Bolo de chocolate"
+                        loading="lazy">
+
+                </article>
+
+                <article class="menu-cardapio-item">
+
+                    <h3>Bolo de Gatinho</h3>
+
+                    <p>
+                        Um bolo de morango com chantilly,
+                        perfeito para quem ama pets e frutas!
+                    </p>
+
+                    <img
+                        class="img-cardapio"
+                        src="img/cat_cake.jpg"
+                        alt="Bolo decorado de gatinho"
+                        loading="lazy">
+
+                </article>
+
+            </div>
+
+            <p>
+                <a href="pages/cardapio.html">
+                    Ver cardápio completo
+                </a>
+            </p>
+
+        </section>
+
+        <!-- CHAMADA PARA A EQUIPE -->
+        <section class="sobre">
+
+            <h2>Conheça nossa equipe!</h2>
+
+            <p>
+                Por trás de nossas receitas existem profissionais
+                cheios de criatividade e talento.
+                Venha conhecer quem faz parte da Sempre Doces!
+            </p>
+
+            <p>
+                <a href="pages/profissionais.html">
+                    Conheça nossos profissionais
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>
+            © 2026 Confeitaria Sempre Doces.
+            Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <script src="js/index.js"></script>
 
 </body>
-<script src="js/index.js"></script>
 </html>
